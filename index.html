@@ -114,7 +114,9 @@
 
                 <article class="plan-card">
                     <h3>Básico</h3>
-                    <p class="plan-price">$75.000 <small>COP</small></p>
+                    <<p class="plan-old-price">$75.000 COP</p>
+<p class="plan-price">$52.500 <small>COP</small></p>
+<span class="discount-tag">-30% BLACK FRIDAY</span>
                     <p class="plan-duration">45 días · Pago único</p>
                     <ul>
                         <li>Página de presentación</li>
@@ -128,7 +130,9 @@
                 <article class="plan-card featured">
                     <span class="popular">RECOMENDADO</span>
                     <h3>Avanzado</h3>
-                    <p class="plan-price">$150.000 <small>COP</small></p>
+                    <p class="plan-old-price">$150.000 COP</p>
+<p class="plan-price">$105.000 <small>COP</small></p>
+<span class="discount-tag">-30% BLACK FRIDAY</span>
                     <p class="plan-duration">60 días · Pago único</p>
                     <ul>
                         <li>Todo lo del plan Básico</li>
@@ -141,7 +145,9 @@
 
                 <article class="plan-card">
                     <h3>Premium</h3>
-                    <p class="plan-price">$250.000 <small>COP</small></p>
+                   <p class="plan-old-price">$250.000 COP</p>
+<p class="plan-price">$175.000 <small>COP</small></p>
+<span class="discount-tag">-30% BLACK FRIDAY</span>
                     <p class="plan-duration">90 días · Pago único</p>
                     <ul>
                         <li>Todo lo del plan Avanzado</li>
@@ -356,13 +362,46 @@
 
     <footer class="footer">
         <a href="#inicio" class="logo">
-    <img src="logo-nw.png" alt="Logo de Nexora Web">
+    <img src="images/logo-nw.png" alt="Logo de Nexora Web">
     <span>NEXORA WEB</span>
 </a>
         <p>Transformamos negocios en experiencias digitales.</p>
         <small>© 2026 Nexora Web. Todos los derechos reservados.</small>
     </footer>
+<!-- BLACK FRIDAY COUNTDOWN -->
+<div class="black-friday-counter" id="blackFridayCounter">
+    <button class="counter-close" id="closeCounter" aria-label="Cerrar">
+        ×
+    </button>
 
+    <span class="counter-label">⚡ BLACK FRIDAY · 30% OFF</span>
+    <h3>¡Se acaba el tiempo!</h3>
+
+    <div class="counter-time">
+        <div>
+            <strong id="bfDays">00</strong>
+            <small>DÍAS</small>
+        </div>
+
+        <div>
+            <strong id="bfHours">00</strong>
+            <small>HORAS</small>
+        </div>
+
+        <div>
+            <strong id="bfMinutes">00</strong>
+            <small>MIN</small>
+        </div>
+
+        <div>
+            <strong id="bfSeconds">00</strong>
+            <small>SEG</small>
+        </div>
+    </div>
+
+    <p>Promoción hasta el 10 de diciembre</p>
+    <a href="#planes">APROVECHAR OFERTA ↗</a>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
