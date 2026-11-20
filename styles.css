@@ -914,3 +914,136 @@ html {
         font-size: 28px;
     }
 }
+
+/* ===== BLACK FRIDAY COUNTDOWN ===== */
+
+.black-friday-counter {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    width: 290px;
+    padding: 22px;
+    background: linear-gradient(145deg, #101827, #050810);
+    border: 1px solid #1677ff;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0, 119, 255, 0.25);
+    color: #ffffff;
+    font-family: inherit;
+    animation: counterAppear 0.7s ease;
+}
+
+.black-friday-counter .counter-label {
+    color: #62a5ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.black-friday-counter h3 {
+    font-size: 19px;
+    margin: 12px 0 16px;
+}
+
+.counter-time {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+}
+
+.counter-time div {
+    background: #17243a;
+    border-radius: 9px;
+    padding: 10px 3px;
+    text-align: center;
+}
+
+.counter-time strong {
+    display: block;
+    color: #62a5ff;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.counter-time small {
+    display: block;
+    color: #c5d5ec;
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.black-friday-counter p {
+    color: #aebbd0;
+    font-size: 11px;
+    margin: 15px 0;
+}
+
+.black-friday-counter > a {
+    display: block;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    background: #1677ff;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.black-friday-counter > a:hover {
+    background: #0054c7;
+    transform: translateY(-2px);
+}
+
+.counter-close {
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+@keyframes counterAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .black-friday-counter {
+        width: 260px;
+        right: 12px;
+        bottom: 12px;
+        padding: 17px;
+    }
+}
+/* BLACK FRIDAY - PRECIOS */
+
+.plan-old-price {
+    color: #8995a8;
+    font-size: 15px;
+    text-decoration: line-through;
+    margin: 12px 0 2px;
+}
+
+.discount-tag {
+    display: inline-block;
+    margin: 8px 0 12px;
+    padding: 5px 9px;
+    color: #62a5ff;
+    background: rgba(22, 119, 255, 0.12);
+    border: 1px solid rgba(22, 119, 255, 0.4);
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
